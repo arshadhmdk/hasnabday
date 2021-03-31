@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>!!!Birthday!!!</title>
+  <link rel="icon" href="icon77.png">
+  <link rel="stylesheet" type="text/css" href="rocket.css">
+  </head>
+  <body>
+
+    <style>
+      *{
+        background: #01070a;
+      }
+      h1{
+        color:gray;
+      }
+      li{
+        position:absolute;
+        left:40%;
+        top:50px;
+        justify-content: center:
+      }
+      li a{
+
+        color:white:
+        text-align:center;
+        padding:14px 14px;
+        font-weight: bolder;
+        text-decoration:none;
+        font-size: 16px;
+      }
+      li a:hover{
+        background-color:white;
+      }
+    </style>
+    <marquee behavior="scroll" direction="left"><h1>As it is the birthday of a special person, it shouldn't be ordinary and should be something special...so lets not celebrate on earth....lets move to space....lets fly....get ready folks...expect the unexpected....phewwww...click the button to celebrate!!!
+    </h1></marquee>
+
+
+      <li><a href="index1.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        ***CELEBRATE***
+      </a></li>
+      <audio src="bgms/whatsapp-video-2020-11-22-at-121908-ammp4_5pySKmx8.mp3" autoplay>
+
+      </audio>
+
+
+    <div class="scene">
+      <div class="rocket">
+        <img src="rocket.png">
+        </div>
+        </div>
+        <script>
+          function stars(){
+            let count = 20;
+            let scene = document.querySelector('.scene');
+            let i=0;
+            while(i<count){
+              let star = document.createElement('i');
+              let x = Math.floor(Math.random() * window.innerWidth);
+              let duration = Math.random() * 1;
+              let h = Math.random() * 100;
+
+              star.style.left = x + 'px';
+              star.style.width = 1 + 'px';
+              star.style.height = 50 + h + 'px';
+              star.style.animationDuration = duration + 's';
+
+              scene.appendChild(star);
+              i++;
+            }
+          }stars();
+          </script>
+        </body>
+        </html>

@@ -1,0 +1,257 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JK Rowling</title>
+  <link rel="stylesheet" href="count.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon77.png">
+  </head>
+  <body>
+    <audio src="countbgm.mp3" autoplay>
+    </audio>
+    <video autoplay muted loop id="myVideo">
+    <source src="bgms/y2mate.com - 60 00 Minutes ~Clean Star Field~ Longest FREE HD Motion Background AA VFX_1080p.mp4" type="video/mp4">
+  </video>
+
+    <ul>
+      <li><a href="angel.html" onclick="alert('Click the magic button when the two angels strike each other!!!')">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        khaled hosseini
+      </a></li>
+      <li><a href="gallery.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        maria v snyder
+      </a></li>
+      <li><a href="count.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        jk rowling
+      </a></li>
+      <li><a href="effect.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        john green
+      <li><a href="options.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        jrr tolkien
+      </a></li>
+      <li><a href="about.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        rick riordan
+      </a></li>
+      <li><a href="split.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        ruskin bond
+      </a></li>
+    </ul>
+    <div id="snow_fall">
+    <div class="container">
+
+
+      <h3>Since you were born!!!</h3>
+      <h4>Since you met your PARABATAI!!!</h4>
+      <h5>Since you met me!!!</h5>
+
+      <div class="count">
+        <div class="countd">
+          <span id="days">00</span>
+          DAYS
+        </div>
+
+        <div class="countd">
+          <span id="hours">00</span>
+            HOURS
+        </div>
+
+        <div class="countd">
+          <span id="minutes">00</span>
+              MINUTES
+        </div>
+
+        <div class="countd">
+          <span id="seconds">00</span>
+                SECONDS
+        </div>
+      </div>
+
+      <div class="count1">
+        <div class="countd1">
+          <span id="days1">00</span>
+          DAYS
+        </div>
+
+        <div class="countd1">
+          <span id="hours1">00</span>
+            HOURS
+        </div>
+
+        <div class="countd1">
+          <span id="minutes1">00</span>
+              MINUTES
+        </div>
+
+        <div class="countd1">
+          <span id="seconds1">00</span>
+                SECONDS
+        </div>
+      </div>
+
+      <div class="count2">
+        <div class="countd2">
+          <span id="days2">00</span>
+          DAYS
+        </div>
+
+        <div class="countd2">
+          <span id="hours2">00</span>
+            HOURS
+        </div>
+
+        <div class="countd2">
+          <span id="minutes2">00</span>
+              MINUTES
+        </div>
+
+        <div class="countd2">
+          <span id="seconds2">00</span>
+                SECONDS
+        </div>
+      </div>
+
+
+      </div>
+      <script type="text/javascript" src="particles.min.js"></script>
+      <script type="text/javascript" src="appp.js"></script>
+
+    </div>
+
+      <script type="text/javascript">
+        var count = new Date("apr 1,2000 00:00:00").getTime();
+        var x = setInterval(function(){
+          var now = new Date().getTime();
+          var d = now - count;
+
+          var days = Math.floor(d/(1000*60*60*24));
+          var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+          var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+          var seconds = Math.floor((d%(1000*60))/1000);
+
+          document.getElementById("days").innerHTML = days;
+          document.getElementById("hours").innerHTML = hours;
+          document.getElementById("minutes").innerHTML = minutes;
+          document.getElementById("seconds").innerHTML = seconds;
+
+          if(d <= 0){
+            clearInterval(x);
+          }
+        },1000);
+
+        var count1 = new Date("apr 1,2011 00:00:00").getTime();
+        var x1 = setInterval(function(){
+          var now1 = new Date().getTime();
+          var d1 = now1 - count1;
+
+          var days1 = Math.floor(d1/(1000*60*60*24));
+          var hours1 = Math.floor((d1%(1000*60*60*24))/(1000*60*60));
+          var minutes1 = Math.floor((d1%(1000*60*60))/(1000*60));
+          var seconds1 = Math.floor((d1%(1000*60))/1000);
+
+          document.getElementById("days1").innerHTML = days1;
+          document.getElementById("hours1").innerHTML = hours1;
+          document.getElementById("minutes1").innerHTML = minutes1;
+          document.getElementById("seconds1").innerHTML = seconds1;
+
+          if(d1 <= 0){
+            clearInterval(x1);
+          }
+        },1000);
+
+        var count2 = new Date("sept 13,2017 00:00:00").getTime();
+        var x2 = setInterval(function(){
+          var now2 = new Date().getTime();
+          var d2 = now2 - count2;
+
+          var days2 = Math.floor(d2/(1000*60*60*24));
+          var hours2 = Math.floor((d2%(1000*60*60*24))/(1000*60*60));
+          var minutes2 = Math.floor((d2%(1000*60*60))/(1000*60));
+          var seconds2 = Math.floor((d2%(1000*60))/1000);
+
+          document.getElementById("days2").innerHTML = days2;
+          document.getElementById("hours2").innerHTML = hours2;
+          document.getElementById("minutes2").innerHTML = minutes2;
+          document.getElementById("seconds2").innerHTML = seconds2;
+
+          if(d2 <= 0){
+            clearInterval(x2);
+          }
+        },1000);
+        </script>
+
+        <style>
+        img{
+
+        max-width: 100%;
+
+        max-height: 100%;
+
+        display: block; /* remove extra space below image */
+
+        }
+        p {text-align:center;font-size:100px;}
+        ul{
+          list-style-type:none;
+          margin:0;
+          padding:0;
+          overflow:hidden;
+          background-color:black;
+          background-image: url("twoo.jpg");
+
+          /*position: absolute;
+          top:1px;
+          right:1px;*/
+        }
+
+        li{
+          float:right;
+        }
+        li a{
+
+          color:white:
+          text-align:center;
+          padding:14px 14px;
+          font-weight: bolder;
+          text-decoration:none;
+          font-size: 16px;
+        }
+        li a:hover{
+          background-color:white;
+        }
+        #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        }
+        </style>
+  </body>
+</html>

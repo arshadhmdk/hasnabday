@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desc</title>
+  <link rel="stylesheet" type="text/css" href="desc.css">
+</head>
+<body>
+  <div class="container" id="blur">
+    <div class="content">
+      <h2>check</h2>
+      <!--<img src="images/11.JPG">-->
+      <a href="#" onclick="toggle()">Read more</a>
+    </div>
+  </div>
+  <div id="popup">
+    <h2>another check</h2>
+    <p>text for another check</p>
+    <a href="#" onclick="toggle()">Close</a>
+  </div>
+  <script type="text/javascript">
+    function toggle(){
+      var blur = document.getElementById('blur');
+      blur.classList.toggle('active');
+      var popupp = document.getElementById('popup');
+      popup.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
